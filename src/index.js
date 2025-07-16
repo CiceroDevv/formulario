@@ -56,7 +56,7 @@ function nomeCheck() {
 function sobreNomeCheck() {
   const valorSobreNome = sobrenome.value;
 
-  if (valorSobreNome) {
+  if (valorSobreNome || valorSbreNome.length>=2) {
     sobrenome.classList.add("certo");
     sobrenome.classList.remove("erro");
   } else {
@@ -68,7 +68,7 @@ function sobreNomeCheck() {
 function emailCheck() {
   const valorEmail = email.value;
 
-  if (valorEmail === " ") {
+  if (valorEmail === "") {
     email.classList.remove("erro");
     email.classList.add("certo");
     email.focus();
