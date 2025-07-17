@@ -9,6 +9,7 @@ button.addEventListener("click", function (e) {
   // PREVENTE DEFOULT ()
   nomeCheck();
   sobreNomeCheck();
+  e.preventDefault();
   emailCheck();
   senhaCheck();
   var valorNome = nome.value;
@@ -37,7 +38,7 @@ button.addEventListener("click", function (e) {
     e.preventDefault();
     alert("Fromulário foi enviado");
   } else {
-    e.preventDefault();
+    
   }
 });
 
