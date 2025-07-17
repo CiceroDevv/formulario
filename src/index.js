@@ -44,37 +44,32 @@ button.addEventListener("click", function (e) {
 function nomeCheck() {
   const valorNome = nome.value;
 
-  if (valorNome =="" || valornome.length <=3) {
+  if (valorNome ==="" || valornome.length <=3) {
     nome.classList.add("erro");
     nome.focus()
   } else {
-    nome.classList.remove("erro");
+    nome.classList.add("certo")
   }
 }
 
 function sobreNomeCheck() {
   const valorSobreNome = sobrenome.value;
 
-  if (valorSobreNome=="" || valorSbreNome.length <=3) {
-    sobrenome.classList.add("certo");
-    sobrenome.classList.remove("erro");
-  } else {
+  if (valorSobreNome==="" || valorSbreNome.length <=3) {
+    sobrenome.focus()
     sobrenome.classList.add("erro");
-    sobrenome.classList.remove("name");
-    sobrenome.focus();
+  } else {
+    sobrenome.classList.add("certo");
   }
 }
 function emailCheck() {
   const valorEmail = email.value;
 
-  if (valorEmail == "") {
-    email.classList.remove("erro");
-    email.classList.add("certo");
+  if (valorEmail == "" || valorEmail.length <=3 ) {
+    email.classList.add("erro");
     email.focus();
   } else {
-    email.classList.add("erro");
-    email.classList.remove("sobre_email");
-    email.focus();
+    email.classList.add("certo");
   }
 }
 
@@ -84,11 +79,9 @@ function senhaCheck() {
   if (valorsenha == "" || !validaSenha(valorsenha, 8)) {
     senha.classList.add("erro");
     senha.classList.remove("senha");
+    senha.classList.focus()
   } else {
-    senha.classList.remove("erro");
     senha.classList.add("certo");
-    senha.classList.remove("senha");
-    senha.focus();
   }
 }
 function validaSenha(senha, minimoSenha) {
