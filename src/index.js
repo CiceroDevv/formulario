@@ -12,50 +12,6 @@ button.addEventListener("click", function (e) {
   sobreNomecheck();
   emailCheck();
   senhaCheck();
-  var valorNome = nome.value;
-  var valorSobreNome = nome.value;
-  var valorEmail = email.value;
-  var valorSenha = senha.value;
-
-  const pNome = document.querySelector(".nome-texto");
-  const pSobrenome = document.querySelector(".sobrenome-texto");
-  const pEmail = document.querySelector(".email-texto");
-  const pSenha = document.querySelector(".senha-texto");
-  if (valorNome == "") {
-    valorNome = false;
-  } else {
-    valorNome = true;
-  }
-  if (valorSobreNome == "") {
-    valorSobreNome = false;
-  } else {
-    valorSobreNome = true;
-  }
-
-  if (valorEmail == "") {
-    valorEmail = false;
-  } else {
-    valorEmail = true;
-  }
-
-  if (valorSenha == "") {
-    valorSenha = false;
-  } else {
-    valorSenha = true;
-  }
-  if (
-    valorNome === true &&
-    valorSobreNome == true &&
-    valorEmail === true &&
-    valorSenha === true
-  ) {
-    alert("Formulário foi enviado");
-  } else {
-    pNome.classList.remove("hidden");
-    pSobrenome.classList.remove("hidden");
-    pEmail.classList.remove("hidden");
-    pSenha.classList.remove("hidden");
-  }
 });
 function nomecheck() {
   const p = document.querySelector(".nome-texto");
