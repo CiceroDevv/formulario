@@ -45,7 +45,7 @@ function nomeCheck() {
 
   if (valorNome =="" || valornome.length >=3) {
     nome.classList.add("erro");
-nome.focus()
+    nome.focus()
   } else {
     nome.classList.remove("erro");
   }
