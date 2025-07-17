@@ -34,6 +34,7 @@ button.addEventListener("click", function (e) {
   }
 
   if (valorNome == true && valorEmail == true && valorSenha == true) {
+    e.preventDefault();
     alert("Fromulário foi enviado");
   } else {
     e.preventDefault();
@@ -43,7 +44,7 @@ button.addEventListener("click", function (e) {
 function nomeCheck() {
   const valorNome = nome.value;
 
-  if (valorNome =="" || valornome.length >=3) {
+  if (valorNome =="" || valornome.length <=3) {
     nome.classList.add("erro");
     nome.focus()
   } else {
@@ -54,7 +55,7 @@ function nomeCheck() {
 function sobreNomeCheck() {
   const valorSobreNome = sobrenome.value;
 
-  if (valorSobreNome=="" || valorSbreNome.length >=3) {
+  if (valorSobreNome=="" || valorSbreNome.length <=3) {
     sobrenome.classList.add("certo");
     sobrenome.classList.remove("erro");
   } else {
