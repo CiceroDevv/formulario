@@ -43,20 +43,18 @@ button.addEventListener("click", function (e) {
 function nomeCheck() {
   const valorNome = nome.value;
 
-  if (valorNome =="" || valor nome >=2) {
-    nome.classList.remove("erro");
-    nome.classList.add("certo");
-  } else {
+  if (valorNome =="" || valornome.length >=3) {
     nome.classList.add("erro");
-    nome.classList.remove("name");
-    nome.focus();
+nome.focus()
+  } else {
+    nome.classList.remove("erro");
   }
 }
 
 function sobreNomeCheck() {
   const valorSobreNome = sobrenome.value;
 
-  if (valorSobreNome=="" || valorSbreNome.length>=2) {
+  if (valorSobreNome=="" || valorSbreNome.length >=3) {
     sobrenome.classList.add("certo");
     sobrenome.classList.remove("erro");
   } else {
@@ -68,7 +66,7 @@ function sobreNomeCheck() {
 function emailCheck() {
   const valorEmail = email.value;
 
-  if (valorEmail === "") {
+  if (valorEmail == "") {
     email.classList.remove("erro");
     email.classList.add("certo");
     email.focus();
