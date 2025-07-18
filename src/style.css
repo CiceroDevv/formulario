@@ -184,7 +184,6 @@ button:hover {
     text-align: center;
     font-size: 1.2rem;
     margin: 0 0 15px 0;
-    border: 1px solid black; 
   }
   .left_content {
     max-width: 400px;
@@ -200,6 +199,7 @@ button:hover {
     height: 60px;
     border-radius: 5px;
     box-shadow: 0 4px 0 0 #a0a0a041;
+    border: 1px solid Black;
   }
   .form-header p {
     font-size: 1rem;
