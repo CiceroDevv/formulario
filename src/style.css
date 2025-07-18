@@ -57,6 +57,7 @@ body {
   height: 40px;
   border-radius: 5px;
   box-shadow: 0 4px 0 0 #a0a0a041;
+  borde:1px solid Black;
 }
 .form-header p {
   color: white;
