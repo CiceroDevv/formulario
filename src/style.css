@@ -199,13 +199,12 @@ button:hover {
     height: 60px;
     border-radius: 5px;
     box-shadow: 0 4px 0 0 #a0a0a041;
-    border: 1px solid Black;
   }
   .form-header p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .form-header span {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
   }
   .form-titulo {
     display: flex;
