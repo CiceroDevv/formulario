@@ -42,6 +42,7 @@ function sobreNomecheck() {
     sobrenome.classList.add("erro");
     p.classList.remove("hidden");
     p.innerText = "Campo Sobre-Nome não pode ficar vazil ! ! !";
+p.style.fontSize="0.9rem"
   }
 }
 sobrenome.addEventListener("keyup", () => {
